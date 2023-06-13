@@ -6,7 +6,7 @@
 docker build -t <DOCKER NAME> .
 ```
 
-## Run the docker image after Success building image
+## Run the docker image after success building image
 ```
 docker run -d -p <PORT FOR DOCKER>:<THE EXPOSE PORT> <DOCKER NAME>
 ```
