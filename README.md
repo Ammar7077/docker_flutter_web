@@ -12,5 +12,4 @@ docker build -t <DOCKER NAME> .
 docker run -d -p <PORT FOR DOCKER>:<THE EXPOSE PORT> <DOCKER NAME>
 ```
 
-### Docker basics: how to start and stop containers
-():[https://eldermoraes.com/docker-basics-how-to-start-and-stop-containers/]
+### [Docker basics: how to start and stop containers]:(https://eldermoraes.com/docker-basics-how-to-start-and-stop-containers/)
