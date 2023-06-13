@@ -11,17 +11,22 @@ RUN git clone https://github.com/flutter/flutter.git /usr/local/flutter
 ENV PATH="/usr/local/flutter/bin:/usr/local/flutter/bin/cache/dart-sdk/bin:${PATH}"
 
 RUN flutter doctor -v
-
 RUN flutter channel master
 RUN flutter upgrade
+
+# Enable web support
 RUN flutter config --enable-web
 
 RUN mkdir /app/
 COPY . /app/
+# Set the working directory inside the container
 WORKDIR /app/
+
+# Build the Flutter web application
 RUN flutter build web --release --web-renderer html
 
 FROM nginx:1.21.1-alpine
 COPY --from=build-env /app/build/web /usr/share/nginx/html
 
+# EXPOSE <EXPOSE PORT THAT YOU WANT>
 EXPOSE 80
