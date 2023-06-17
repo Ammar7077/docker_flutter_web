@@ -36,4 +36,4 @@ docker rm <CONTAINER ID>
 docker image rm <IMAGE ID>
 ```
 
-### [Docker basics: how to start and stop containers](https://eldermoraes.com/docker-basics-how-to-start-and-stop-containers/)
+### [Docker](https://docs.docker.com/engine/reference/commandline/docker/)
