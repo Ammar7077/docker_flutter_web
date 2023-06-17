@@ -11,7 +11,7 @@ docker build -t <DOCKER NAME> .
 docker run -d -p <PORT FOR DOCKER>:<THE EXPOSE PORT> <DOCKER NAME>
 ```
 
-## List the dockers
+## List the docker containers
 ```
 docker ps -a
 ```
@@ -21,12 +21,12 @@ docker ps -a
 docker images
 ```
 
-## Stop docker
+## Stop docker container
 ```
 docker stop <CONTAINER ID>
 ```
 
-## Remove docker
+## Remove docker containers
 ```
 docker rm <CONTAINER ID>
 ```
