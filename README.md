@@ -11,6 +11,11 @@ docker build -t <DOCKER NAME> .
 docker run -d -p <PORT FOR DOCKER>:<THE EXPOSE PORT> <DOCKER NAME>
 ```
 
+## Start existing container
+```
+docker start <container-name/ID>
+```
+
 ## List the docker containers
 ```
 docker ps -a
